@@ -1,570 +1,487 @@
-# Amazon Loop - Product Requirements Document (PRD)
+Amazon Loop
 
-## 1. Vision
+AI-Powered Returns & Sustainable Resale Ecosystem
 
-Amazon Loop is a circular economy platform that transforms idle household assets into productive economic resources.
+Document Type: Product Requirements Document (PRD)
 
-The platform enables users to:
+Version: 1.0 Final
 
-* Monetize unused products.
-* Rent products to consumers for temporary use.
-* Donate usable assets to NGOs.
-* Recycle damaged products into valuable components.
-* Route assets through a distributed network of Fulfillment Hubs.
-
-The objective is to maximize asset utilization, reduce waste, create sustainable local circular economies, and provide affordable access to products without requiring ownership.
+Status: Build Ready
 
 ---
 
-## 2. Problem Statement
+1. Vision
 
-Millions of products remain unused after purchase.
+Millions of products purchased online are returned, underused, exchanged, or discarded despite remaining fully functional.
 
-Examples include:
+Returns create massive operational costs for e-commerce platforms while contributing significantly to environmental waste.
 
-* Textbooks
-* Electronics
-* Baby equipment
-* Furniture
-* Home appliances
-* Cameras
-* Sports equipment
-* Tools
+At the same time, customers hesitate to purchase refurbished or second-hand products because they lack transparency and trust regarding product condition.
 
-Most products follow a linear lifecycle:
+Amazon Loop transforms the traditional:
 
-```text
-Purchase
-    ↓
-Use
-    ↓
+Buy → Return → Discard
+
+model into:
+
+Buy → Return → Evaluate → Reuse → Resell → Recycle
+
+using Artificial Intelligence.
+
+The platform automatically determines the most valuable and sustainable next destination for every returned or unused product, ensuring that every item finds its next best owner.
+
+---
+
+2. Problem Statement
+
+Current return ecosystems suffer from four major problems:
+
+High Processing Costs
+
+Return processing can cost up to 66% of the product value due to transportation, inspection, sorting, and relisting.
+
+Customer Trust Gap
+
+Customers often avoid refurbished products because they cannot verify the actual condition of the exact item they are buying.
+
+Environmental Waste
+
+Millions of usable products end up in liquidation channels, warehouses, or landfills.
+
+Poor Resale Experience
+
+Consumers lack a seamless and trusted way to resell products they previously purchased.
+
+---
+
+3. Solution Overview
+
+Amazon Loop introduces an AI-driven lifecycle management platform that:
+
+- Prevents avoidable returns before purchase
+- Uses Computer Vision to assess product condition
+- Automatically routes products to their optimal destination
+- Rewards sustainable behavior through Green Credits
+- Enables trusted peer-to-peer resale
+- Matches returned products with their next best owner
+
+---
+
+4. Business Goals
+
+Reduce Reverse Logistics Cost
+
+Target:
+30% reduction in return processing expenses.
+
+Increase Recovery Value
+
+Target:
+Recover up to 80% of original product value through intelligent resale and refurbishment.
+
+Increase Refurbished Product Adoption
+
+Target:
+Increase refurbished purchases by 40%.
+
+Improve Sustainability Metrics
+
+Target:
+Reduce landfill-bound returns by 50%.
+
+Build Customer Trust
+
+Target:
+Maintain 4.5+ average rating for refurbished products.
+
+---
+
+5. Core Features
+
+---
+
+Feature 1: Predictive Return Prevention (MVP)
+
+Prevent returns before they happen.
+
+Capabilities
+
+- Analyze historical return behavior
+- Detect products with high return probability
+- Personalized purchase recommendations
+- Compatibility verification
+- Size and fit prediction
+
+Example
+
+At checkout:
+
+"Customers with similar purchase history typically order one size larger."
+
+Benefits
+
+- Lower return rates
+- Better customer satisfaction
+- Reduced logistics costs
+
+---
+
+Feature 2: Smart Quality Grading (MVP)
+
+Use AI and Computer Vision to automatically assess product condition.
+
+User Flow
+
+1. User initiates return or resale.
+2. App launches guided camera scanner.
+3. User captures images/video.
+4. AI analyzes product.
+5. Product receives condition grade.
+
+AI Analysis
+
+Detect:
+
+- Scratches
+- Dents
+- Wear
+- Missing accessories
+- Cosmetic defects
+- Functional indicators
+
+Output Grades
+
+Grade| Description
+Mint| Like New
+Excellent| Minimal Wear
+Good| Visible Wear
+Fair| Heavy Wear
+Damaged| Requires Repair
+Recycle| End Of Life
+
+Benefits
+
+- Instant grading
+- Reduced manual inspection
+- Faster processing
+
+---
+
+Feature 3: AI Routing Engine (MVP)
+
+Automatically determine the best destination for every product.
+
+Routing Logic
+
+Condition| Action
+Mint| Open Box Resale
+Excellent| Certified Refurbished
+Good| Discount Marketplace
+Fair| Local Resale Outlet
+Damaged| Repair Center
+Low Value| Donation Program
+Non Repairable| Recycling Facility
+Customer Requested| Exchange Program
+
+Routing Factors
+
+- Product condition
+- Market demand
+- Product category
+- Refurbishment cost
+- Resale value
+- Environmental impact
+
+Outcome
+
+Maximum profit and sustainability.
+
+---
+
+Feature 4: Next Best Owner AI (MVP)
+
+Core innovation of Amazon Loop.
+
+Instead of simply storing returned inventory, AI identifies the most suitable next owner.
+
+Inputs
+
+- Local demand
+- Search trends
+- Wishlists
+- Refurbished preferences
+- Geographic demand
+- Product popularity
+
+Example
+
+Returned Sony headphones in Bangalore are matched with a nearby customer actively searching for the same model.
+
+Benefits
+
+- Faster resale
+- Higher recovery value
+- Lower storage costs
+
+---
+
+Feature 5: AI Trust Passport (MVP)
+
+Every refurbished product receives a transparent AI-generated condition report.
+
+Includes
+
+- Actual photos
+- AI inspection summary
+- Cosmetic damage map
+- Functionality score
+- Battery health
+- Repair history
+- Certification status
+
+Example
+
+Condition: Excellent
+
+Battery Health: 97%
+
+Minor Scratch:
+2mm scratch on left earcup
+
+Functionality:
+100% Verified
+
+Benefits
+
+- Builds trust
+- Improves conversion rates
+- Reduces refurbished returns
+
+---
+
+Feature 6: Green Credits Ecosystem (MVP)
+
+Reward sustainable actions.
+
+Earn Credits
+
+Action| Credits
+Slower Consolidated Return| 50
+Buy Refurbished| 100
+Donate Product| 200
+Sell Through Loop| 100
+Choose Recycling Option| 150
+
+Redeem Credits
+
+- Amazon Discounts
+- Prime Membership Benefits
+- Carbon Offset Contributions
+- Exclusive Sustainable Products
+
+---
+
+Feature 7: Personalized Refurbished Recommendations (MVP)
+
+Promote certified refurbished alternatives.
+
+Example
+
+Instead of:
+
+Sony WH-1000XM5
+
+Show:
+
+Certified Refurbished Sony WH-1000XM5
+
+Save ₹8,000
+
+Earn 200 Green Credits
+
+AI Confidence: 98%
+
+Benefits
+
+- Increase refurbished adoption
+- Improve customer savings
+
+---
+
+Feature 8: Trusted Peer-to-Peer Marketplace (Phase 2)
+
+Allow customers to resell products purchased from Amazon.
+
+Features
+
+- One-click listing from order history
+- AI generated pricing
+- AI generated condition grading
+- Amazon escrow protection
+- Secure payments
+- Shipment verification
+
+Benefits
+
+- Trusted second-hand ecosystem
+- Additional revenue channel
+
+---
+
+6. User Journeys
+
+---
+
+Journey A: Return Processing
+
+1. User selects Return Item.
+2. App requests AI scan.
+3. User captures photos.
+4. AI grades product.
+5. Routing engine determines destination.
+6. Return label generated automatically.
+7. User earns Green Credits.
+
+---
+
+Journey B: Sustainable Purchase
+
+1. User searches product.
+2. Refurbished alternative appears.
+3. AI Trust Passport displayed.
+4. User reviews condition.
+5. User purchases refurbished version.
+6. User earns Green Credits.
+
+---
+
+Journey C: Sell Old Product
+
+1. User opens previous orders.
+2. Selects Sell on Loop.
+3. AI generates listing.
+4. Product scanned and verified.
+5. Buyer purchases.
+6. Amazon handles payment and trust verification.
+
+---
+
+7. System Architecture
+
+Frontend
+
+- Next.js
+- React
+- Tailwind CSS
+- Amazon Style Design System
+
+Backend
+
+- Node.js
+- Express/NestJS
+- PostgreSQL
+
+AI Services
+
+- OpenAI
+- Computer Vision Model
+- Product Routing Model
+- Recommendation Engine
+
 Storage
-    ↓
-Disposal
-```
 
-This creates:
+- Amazon S3
 
-* Economic waste
-* Environmental waste
-* Storage inefficiency
-* Reduced product utilization
+Authentication
 
-Amazon Loop transforms this lifecycle into:
+- Amazon Login Simulation
+- JWT
 
-```text
-Purchase
-    ↓
-Use
-    ↓
-Rent
-    ↓
-Donate
-    ↓
-Recycle
-```
+Messaging
 
-By extending the useful life of products, the platform generates value for owners, consumers, NGOs, recyclers, and fulfillment partners.
+- Notification Service
+- Email Service
 
 ---
 
-## 3. Business Goals
+8. Non-Functional Requirements
 
-### Primary Goals
+AI Latency
 
-* Increase asset utilization.
-* Generate recurring revenue.
-* Reduce product waste.
-* Create local circular economies.
-* Enable affordable access to products.
-* Extend product lifecycles.
+Image grading under 3 seconds.
 
-### Secondary Goals
+Scalability
 
-* Support NGOs through donations.
-* Encourage sustainable consumption habits.
-* Reduce landfill waste.
-* Create new income streams for local fulfillment partners.
+Support 500,000+ daily return requests.
 
----
+Security
 
-## 4. Value Proposition
+Encrypted image uploads.
 
-### For Asset Owners
+Fraud Prevention
 
-* Earn income from idle assets.
-* Reduce storage burden.
-* Extend asset value beyond personal use.
-* Support sustainability.
+Detect:
 
-### For Consumers
+- Photo spoofing
+- Screen replay attacks
+- Fake product submissions
 
-* Access products at a fraction of ownership cost.
-* Avoid long-term ownership expenses.
-* Use products only when needed.
-* Access premium products affordably.
+Privacy
 
-### For NGOs
+Automatically blur:
 
-* Receive useful products.
-* Improve donation logistics.
-* Access verified donation inventory.
+- Faces
+- Addresses
+- Personal information
 
-### For Recyclers
+before processing.
 
-* Receive structured scrap inventory.
-* Recover valuable materials.
-* Improve recycling efficiency.
+Availability
 
-### For Fulfillment Partners
-
-* Utilize existing infrastructure.
-* Generate additional income.
-* Increase local engagement and traffic.
+99.9% uptime.
 
 ---
 
-## 5. Marketplace Model
+9. Success Metrics
 
-Amazon Loop operates as a managed circular economy marketplace.
+Business
 
-Participants:
+- Return cost reduction
+- Recovery value increase
+- Refurbished sales growth
 
-* Asset Owners
-* Consumers
-* Fulfillment Hubs
-* NGOs
-* Recyclers
-* Administrators
+Customer
 
-The platform coordinates:
+- Trust Passport engagement
+- Refurbished conversion rate
+- Customer satisfaction
 
-* Discovery
-* Storage
-* Rentals
-* Donations
-* Recycling
-* Analytics
-* Lifecycle Tracking
+Sustainability
 
-Revenue is generated through:
-
-* Rental commissions
-* Fulfillment service fees
-* Logistics fees
-* Subscription plans
-* Recycling partnerships
-* Enterprise partnerships
+- Items reused
+- Items recycled
+- Carbon emissions reduced
+- Green Credits distributed
 
 ---
 
-## 6. Target Users
+10. Future Roadmap
 
-### Asset Owners
+Phase 2
 
-Individuals who own products and wish to monetize, donate, or recycle them.
+- Full P2P marketplace
+- Dynamic AI pricing
+- Regional repair partner network
 
-Capabilities:
+Phase 3
 
-* Register assets
-* Upload images
-* Stage assets at fulfillment hubs
-* Rent assets
-* Donate assets
-* Submit assets for recycling
-* Track earnings
-* Track Loop Credits
-* Monitor asset lifecycle history
+- Blockchain product lifecycle tracking
+- Carbon impact dashboard
+- Cross-marketplace resale network
+- AI demand forecasting
 
 ---
 
-### Consumers
+Final Product Statement
 
-Users who access products without purchasing them outright.
-
-Consumers may include:
-
-* Students
-* Working Professionals
-* Families
-* Temporary Residents
-* Small Businesses
-* Event Organizers
-
-Capabilities:
-
-* Browse inventory
-* Search inventory
-* Filter inventory
-* Reserve products
-* Rent products
-* Return products
-* View rental history
-* Manage active rentals
-* Redeem Loop Credits
-
----
-
-### Fulfillment Hub Operators
-
-Operators responsible for managing physical asset movement and storage.
-
-Supported Hub Types:
-
-* Kirana Stores
-* Partnered Dark Stores
-* Campus Collection Centers
-* NGO Distribution Centers
-* Recycling Collection Centers
-
-Capabilities:
-
-* Receive inventory
-* Verify condition
-* Manage capacity
-* Coordinate handoffs
-* Process returns
-* Process transfers
-
----
-
-### NGOs
-
-Organizations receiving donated assets.
-
-Capabilities:
-
-* Browse donation inventory
-* Request transfers
-* Accept donations
-* Confirm donation receipt
-* Generate donation reports
-
----
-
-### Recyclers
-
-Partners responsible for recovering value from damaged products.
-
-Capabilities:
-
-* Receive damaged assets
-* Extract reusable components
-* Create material bundles
-* Report recovery value
-* Track recycled inventory
-
----
-
-### Administrators
-
-Platform operators responsible for managing the ecosystem.
-
-Capabilities:
-
-* Manage users
-* Manage roles
-* Manage fulfillment hubs
-* Review analytics
-* Resolve disputes
-* Configure platform settings
-* Monitor operations
-
----
-
-## 7. Fulfillment Hub Network
-
-Amazon Loop operates through a distributed Fulfillment Hub Network.
-
-A Fulfillment Hub is any approved location capable of:
-
-* Receiving assets
-* Verifying assets
-* Storing assets
-* Renting assets
-* Processing donations
-* Processing recycling requests
-
-Supported Hub Types:
-
-1. Kirana Stores
-2. Partnered Dark Stores
-3. Campus Collection Centers
-4. NGO Distribution Centers
-5. Recycling Collection Centers
-
-Routing decisions are based on:
-
-* Distance
-* Capacity
-* Asset Category
-* Hub Capabilities
-* Operating Hours
-* Logistics Cost
-* Demand Forecast
-
----
-
-## 8. Asset Fulfillment Flow
-
-### Rental Flow
-
-```text
-Owner
-   ↓
-Fulfillment Hub
-   ↓
-Consumer
-   ↓
-Fulfillment Hub
-   ↓
-Owner / Next Consumer
-```
-
-### Donation Flow
-
-```text
-Owner
-   ↓
-Fulfillment Hub
-   ↓
-NGO
-```
-
-### Recycling Flow
-
-```text
-Owner
-   ↓
-Fulfillment Hub
-   ↓
-Recycler
-```
-
-The fulfillment network is responsible for:
-
-* Asset intake
-* Verification
-* Temporary storage
-* Consumer handoff
-* Return processing
-* Donation routing
-* Recycling routing
-
----
-
-## 9. Donation Incentive Program
-
-Amazon Loop rewards users for donating assets through the platform.
-
-The platform uses an internal reward currency called:
-
-```text
-Loop Credits
-```
-
-Loop Credits encourage sustainable behavior while avoiding the complexity of direct cash payouts.
-
-### Ways to Earn Credits
-
-* Verified Donations
-* Successful Rentals
-* Referrals
-* Community Programs
-* Sustainability Campaigns
-
-### Donation Rewards
-
-Example:
-
-```text
-Asset Value: ₹2,000
-
-Donation Completed
-
-Reward:
-+ 200 Loop Credits
-+ 25 Impact Points
-```
-
-### Credit Redemption
-
-Users may redeem credits for:
-
-* Rental Discounts
-* Reduced Logistics Fees
-* Reduced Fulfillment Fees
-* Premium Features
-* Future Partner Benefits
-
-Example:
-
-```text
-100 Loop Credits = ₹100 Platform Credit
-```
-
-### Sustainability Impact Score
-
-Users accumulate Impact Points through:
-
-* Donations
-* Recycling
-* Asset Sharing
-* Circular Economy Participation
-
-Example:
-
-```text
-Impact Score: 1,500
-
-Assets Donated: 12
-
-Assets Recycled: 4
-
-Waste Diverted:
-85 kg
-```
-
----
-
-## 10. Donation Lifecycle
-
-Donation Flow:
-
-```text
-OWNER
-   ↓
-DONATION_PENDING
-   ↓
-DONATION_MATCHED
-   ↓
-DONATION_IN_TRANSIT
-   ↓
-DONATED
-   ↓
-NGO_VERIFIED
-   ↓
-LOOP_CREDITS_AWARDED
-```
-
-Credits are awarded only after:
-
-1. NGO Acceptance
-2. Asset Delivery
-3. NGO Verification
-
-This prevents fraud and duplicate claims.
-
----
-
-## 11. Success Metrics
-
-Key Performance Indicators (KPIs):
-
-* Total Assets Listed
-* Assets Rented
-* Rental Revenue
-* Donation Count
-* Recycling Recovery Value
-* Active Users
-* Fulfillment Hub Utilization
-* Lifecycle Completion Rate
-* Average Asset Circulation Time
-* Customer Satisfaction Score
-* Revenue Per Asset
-* Revenue Per Hub
-* Total Loop Credits Issued
-* Total Waste Diverted
-
----
-
-## 12. Revenue Model
-
-Revenue Sources:
-
-* Rental Commissions
-* Fulfillment Service Fees
-* Logistics Fees
-* Subscription Plans
-* Recycling Partnerships
-* Enterprise Partnerships
-
-Future Revenue Opportunities:
-
-* Insurance Plans
-* Extended Warranties
-* Verification Services
-* Carbon Credit Programs
-
----
-
-## 13. Non-Functional Requirements
-
-### Performance
-
-* Page Load Time < 2 Seconds
-* API Response Time < 300ms Average
-
-### Availability
-
-* Target Uptime: 99.9%
-
-### Security
-
-* Role-Based Access Control (RBAC)
-* Audit Logging
-* Data Encryption In Transit
-* Secure Authentication
-* Secure Authorization
-
-### Scalability
-
-Support:
-
-* 100,000+ Assets
-* 10,000+ Users
-* 1,000+ Fulfillment Hubs
-* Multi-City Expansion
-* Nationwide Growth
-
----
-
-## 14. MVP Scope
-
-### Included
-
-* User Authentication
-* Role-Based Access Control
-* Asset Registration
-* Fulfillment Hub Management
-* Rental Workflow
-* Donation Workflow
-* Recycling Workflow
-* Lifecycle Tracking
-* Event Logging
-* Analytics Dashboard
-* Geospatial Hub Search
-* Persona Switching
-* Notification System
-* Loop Credits System
-* Sustainability Score Tracking
-
-### Excluded
-
-* Native Mobile Applications
-* Internationalization (i18n)
-* AI Pricing Recommendations
-* Marketplace Bidding
-* Dynamic Logistics Optimization
-* Carbon Impact Forecasting
-* Recommendation Engine
-
----
-
-## 15. Long-Term Vision
-
-Amazon Loop aims to become a nationwide circular economy infrastructure platform enabling households, consumers, NGOs, retailers, and recyclers to participate in a sustainable asset-sharing ecosystem.
-
-The long-term objective is to maximize product utilization, reduce waste, create economic opportunities, support local businesses, and build a scalable fulfillment network across India.
-
-Amazon Loop seeks to become the operating system for the circular economy, ensuring products continue generating value throughout their lifecycle rather than ending after a single ownership cycle.
+Amazon Loop is an AI-powered circular commerce platform that prevents unnecessary returns, automatically grades products using computer vision, intelligently routes inventory, rewards sustainable behavior, and ensures every returned product finds its next best owner.
